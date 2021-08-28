@@ -2,20 +2,20 @@
 
 using namespace std;
 
+/*
+if you want your main function on top
+else
+put the printSomething function above main
+/**/
+void printSomething();
+
 int main()
 {
-    int a;
-    int b;
-    int sum;
-
-    cout << "Enter a number hoss! \n";
-    cin >> a;
-
-    cout << "Enter another number \n";
-    cin >> b;
-
-    sum = a + b;
-    cout << "the sum of those numbers is " << sum << endl;
-
+    printSomething();
     return 0;
+}
+
+void printSomething()
+{
+    cout << "oooo i am text on the screen" << endl;
 }
