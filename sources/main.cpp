@@ -2,14 +2,18 @@
 
 using namespace std;
 
-int addNumbers(int x, int y)
+class BuckysClass
 {
-    int answer = x + y;
-    return answer;
-}
+public:
+    void coolSaying()
+    {
+        cout << "preachin to the choir" << endl;
+    }
+};
 
 int main()
 {
-    cout << addNumbers(43, 86);
+    BuckysClass buckysObject;
+    buckysObject.coolSaying();
     return 0;
 }
