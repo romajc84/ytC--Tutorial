@@ -2,20 +2,13 @@
 
 using namespace std;
 
-/*
-if you want your main function on top
-else
-put the printSomething function above main
-/**/
-void printSomething();
+void printCrap(int x)
+{
+    cout << "buckys favorite number is " << x << endl;
+}
 
 int main()
 {
-    printSomething();
+    printCrap(20);
     return 0;
-}
-
-void printSomething()
-{
-    cout << "oooo i am text on the screen" << endl;
 }
