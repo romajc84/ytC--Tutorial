@@ -2,13 +2,14 @@
 
 using namespace std;
 
-void printCrap(int x)
+int addNumbers(int x, int y)
 {
-    cout << "buckys favorite number is " << x << endl;
+    int answer = x + y;
+    return answer;
 }
 
 int main()
 {
-    printCrap(20);
+    cout << addNumbers(43, 86);
     return 0;
 }
