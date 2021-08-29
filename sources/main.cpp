@@ -1,14 +1,15 @@
+#include <cmath>
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int x = 10;
-    int y = 10;
+    float a;          // amount
+    float p = 10000;  // principal
+    float r = 0.01;   // rate
 
-    cout << x++ << endl;
-    cout << x << endl;
-
-    cout << ++y << endl;
-    cout << y << endl;
+    for (int day = 1; day <= 30; day++) {
+        a = p * pow(1 + r, day);
+        cout << day << " ----- " << a << endl;
+    }
 }
