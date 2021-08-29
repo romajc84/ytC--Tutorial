@@ -3,17 +3,23 @@
 using namespace std;
 
 int main() {
-    int x = 1;
-    int number;
-    int total = 0;
+    int age;
+    int ageTotal = 0;
+    int numberOfPeopleEntered = 0;
 
-    while (x <= 5) {
-        cin >> number;
-        total = total + number;
-        x++;
+    cout << "Enter first persons age or -1 to quit" << endl;
+    cin >> age;
+
+    while (age != -1) {
+        ageTotal = ageTotal + age;
+        numberOfPeopleEntered++;
+
+        cout << "Enter next persons age or -1 to quit" << endl;
+        cin >> age;
     }
 
-    cout << "Your total is " << total << endl;
+    cout << "Number of people entered: " << numberOfPeopleEntered << endl;
+    cout << "Average age: " << ageTotal / numberOfPeopleEntered << endl;
 
     return 0;
 }
