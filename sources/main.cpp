@@ -1,22 +1,13 @@
-#include <cmath>
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    int age = 18;
+    srand(time(0));
 
-    switch (age) {
-        case 16:
-            cout << "hey you can drive now" << endl;
-            break;
-        case 18:
-            cout << "go buy some lotto tickets" << endl;
-            break;
-        case 21:
-            cout << "buy me some beer" << endl;
-            break;
-        default:
-            cout << "sorry you get nothing" << endl;
+    for (int x = 1; x < 25; x++) {
+        cout << 1 + (rand() % 6) << endl;
     }
 }
