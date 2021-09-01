@@ -2,13 +2,8 @@
 
 using namespace std;
 
-int factorialFinder(int x) {
-    if (x == 1) {
-        return 1;
-    } else {
-        return x * factorialFinder(x - 1);
-    }
-}
 int main() {
-    cout << factorialFinder(5) << endl;
+    int bucky[5] = {66, 75, 2, 43, 99};
+
+    cout << bucky[2] << endl;
 }
