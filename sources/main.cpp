@@ -3,13 +3,11 @@
 using namespace std;
 
 int main() {
-    int bucky[9];
+    int tuna[5] = {20, 54, 76, 832, 546};
+    int sum = 0;
 
-    cout << "Element  -  Value" << endl;
-
-    for (int x = 0; x < 9; x++) {
-        bucky[x] = 99;
-
-        cout << x << "   -----   " << bucky[x] << endl;
+    for (int x = 0; x < 5; x++) {
+        sum += tuna[x];
+        cout << sum << endl;
     }
 }
