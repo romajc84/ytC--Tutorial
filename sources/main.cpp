@@ -2,12 +2,18 @@
 
 using namespace std;
 
-int tuna = 69;
+void printNumber(int x) {
+    cout << "i am printing an integer " << x << endl;
+}
+
+void printNumber(float x) {
+    cout << "now i am printing a float " << x << endl;
+}
 
 int main() {
-    int tuna = 20;
-    // Local Variable
-    cout << tuna << endl;
-    // Global variable
-    cout << ::tuna << endl;
+    int a = 54;
+    float b = 32.4896;
+
+    printNumber(a);
+    printNumber(b);
 }
