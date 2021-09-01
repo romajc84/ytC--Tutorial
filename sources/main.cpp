@@ -1,13 +1,13 @@
-#include <cstdlib>
-#include <ctime>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-    srand(time(0));
+int volume(int l = 1, int w = 1, int h = 1);
 
-    for (int x = 1; x < 25; x++) {
-        cout << 1 + (rand() % 6) << endl;
-    }
+int main() {
+    cout << volume(4, 5, 5) << endl;
+}
+
+int volume(int l, int w, int h) {
+    return l * w * h;
 }
