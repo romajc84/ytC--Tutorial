@@ -1,12 +1,13 @@
-#include "Sally.h"
+#include "Sally.hpp"
 
 #include <iostream>
 
 using namespace std;
 
 Sally::Sally() {
+    cout << "i am the constructor!" << endl;
 }
 
-void Sally::printCrap() {
-    cout << "did someone say steak?" << endl;
+Sally::~Sally() {
+    cout << "I am the deconstructor!" << endl;
 }

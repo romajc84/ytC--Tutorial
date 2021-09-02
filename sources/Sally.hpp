@@ -5,7 +5,7 @@ class Sally {
    private:
    public:
     Sally();
-    void printCrap();
+    ~Sally();
 };
 
 #endif

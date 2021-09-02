@@ -1,14 +1,11 @@
 #include <iostream>
 
 #include "Sally.cpp"
-#include "Sally.h"
+#include "Sally.hpp"
 
 using namespace std;
 
 int main() {
-    Sally sallyObject;
-    Sally *sallyPointer = &sallyObject;
-
-    sallyObject.printCrap();
-    sallyPointer->printCrap();
+    Sally so;
+    cout << "omg wtf is this on my shoe?" << endl;
 }
