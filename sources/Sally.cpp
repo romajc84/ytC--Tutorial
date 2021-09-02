@@ -4,13 +4,11 @@
 
 using namespace std;
 
-Sally::Sally() {
+Sally::Sally(int a, int b)
+    : regVar(a),
+      constVar(b) {
 }
 
-void Sally::printShiz() {
-    cout << "i am a regular function" << endl;
-}
-
-void Sally::printShiz2() const {
-    cout << "i am the constant function" << endl;
+void Sally::print() {
+    cout << "regular variable is: " << regVar << " const variable is: " << constVar << endl;
 }

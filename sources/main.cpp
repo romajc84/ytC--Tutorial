@@ -6,9 +6,6 @@
 using namespace std;
 
 int main() {
-    Sally salObj;
-    salObj.printShiz();
-
-    const Sally constObj;
-    constObj.printShiz2();
+    Sally so(3, 87);
+    so.print();
 }

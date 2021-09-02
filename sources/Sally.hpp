@@ -2,11 +2,13 @@
 #define SALLY_H
 
 class Sally {
-   private:
    public:
-    Sally();
-    void printShiz();
-    void printShiz2() const;
+    Sally(int a, int b);
+    void print();
+
+   private:
+    int regVar;
+    const int constVar;
 };
 
 #endif
