@@ -5,9 +5,12 @@
 using namespace std;
 
 Sally::Sally() {
-    cout << "i am the constructor!" << endl;
 }
 
-Sally::~Sally() {
-    cout << "I am the deconstructor!" << endl;
+void Sally::printShiz() {
+    cout << "i am a regular function" << endl;
+}
+
+void Sally::printShiz2() const {
+    cout << "i am the constant function" << endl;
 }

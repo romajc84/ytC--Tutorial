@@ -6,6 +6,9 @@
 using namespace std;
 
 int main() {
-    Sally so;
-    cout << "omg wtf is this on my shoe?" << endl;
+    Sally salObj;
+    salObj.printShiz();
+
+    const Sally constObj;
+    constObj.printShiz2();
 }

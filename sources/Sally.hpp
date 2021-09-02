@@ -5,7 +5,8 @@ class Sally {
    private:
    public:
     Sally();
-    ~Sally();
+    void printShiz();
+    void printShiz2() const;
 };
 
 #endif
