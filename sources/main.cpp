@@ -1,15 +1,23 @@
 #include <iostream>
 
-#include "Birthday.cpp"
-#include "Birthday.hpp"
-#include "People.cpp"
-#include "People.hpp"
-
 using namespace std;
 
-int main() {
-    Birthday birthObj(12, 28, 1986);
+class StankFist {
+   public:
+    StankFist() { stinkyVar = 0; }
 
-    People buckyRoberts("Bucky the King", birthObj);
-    buckyRoberts.printInfo();
+   private:
+    int stinkyVar;
+
+    friend void stinkysFriend(StankFist &sfo);
+};
+
+void stinkysFriend(StankFist &sfo) {
+    sfo.stinkyVar = 99;
+    cout << sfo.stinkyVar << endl;
+}
+
+int main() {
+    StankFist bob;
+    stinkysFriend(bob);
 }
