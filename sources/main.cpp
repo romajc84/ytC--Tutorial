@@ -1,11 +1,15 @@
 #include <iostream>
 
-#include "Sally.cpp"
-#include "Sally.hpp"
+#include "Birthday.cpp"
+#include "Birthday.hpp"
+#include "People.cpp"
+#include "People.hpp"
 
 using namespace std;
 
 int main() {
-    Sally so(3, 87);
-    so.print();
+    Birthday birthObj(12, 28, 1986);
+
+    People buckyRoberts("Bucky the King", birthObj);
+    buckyRoberts.printInfo();
 }
